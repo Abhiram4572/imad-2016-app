@@ -14,8 +14,7 @@ request.onreadystatechange = function() {
             //Take some action
             if(request.status === 200){
                 var counter = request.responseText;
-                var span = document.getElementById("count");
-                span.innerHTML = counter.toString();
+                res.send(counter.toString());
                 
             }
             
