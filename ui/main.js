@@ -3,7 +3,7 @@
 
 //Counter code
 var button = document.getElementById('counter');
-var span = document.getElementById('count');
+var span1 = document.getElementById('count');
 button.onclick = function() {
 //Make a request to counter endpoint 
 var request = new XMLHttpRequest();
@@ -15,7 +15,7 @@ request.onreadystatechange = function(){
         
         if(request.status === 200){
             var counter = request.responseTest;
-            span.innerHTML = counter.toString();
+            span1.innerHTML = counter.toString();
         }
         
     }
