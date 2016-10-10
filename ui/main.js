@@ -2,8 +2,8 @@
 
 
 //Counter code
-var button = document.getElementById("counter");
-var span = document.getElementById("count");
+var button = document.getElementById('counter');
+var span = document.getElementById('count');
 button.onclick = function() {
 //Make a request to counter endpoint 
 var request = new XMLHttpRequest();
