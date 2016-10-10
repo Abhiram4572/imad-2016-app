@@ -6,6 +6,8 @@ var button = document.getElementById("counter");
 button.onclick = function() {
 //Make a request to counter endpoint 
 var request = new XMLHttpRequest();
+request.open('GET' , 'http://abhiram4572.imad.hasura-app.io/counter' , true);
+request.send(null);
 //Catch the response and store it in a variable
 request.onreadystatechange = function(){
     
