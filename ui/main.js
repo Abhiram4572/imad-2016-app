@@ -23,7 +23,7 @@ request.send(null);
 };
 
 //Submit name
-var nameInput = document.getElementById('name');
+
 
 var submit = document.getElementById('submit_btn');
 submit.onclick = function() {
@@ -34,6 +34,7 @@ var request = new XMLHttpRequest();
 
 //Catch the response and store it in a variable
 request.onreadystatechange = function(){
+    var nameInput = document.getElementById('name');
     var name = nameInput.value;
     if(request.readystate === XMLHttpRequest.DONE){
         
