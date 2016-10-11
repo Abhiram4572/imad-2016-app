@@ -24,7 +24,7 @@ request.send(null);
 
 //Submit name
 var nameInput = document.getElementById('name');
-var name = nameInput.value;
+
 var submit = document.getElementById('submit_btn');
 submit.onclick = function() {
 //Make a request to server and send the name
@@ -34,7 +34,7 @@ var request = new XMLHttpRequest();
 
 //Catch the response and store it in a variable
 request.onreadystatechange = function(){
-    
+    var name = nameInput.value;
     if(request.readystate === XMLHttpRequest.DONE){
         
         if(request.status === 200){
