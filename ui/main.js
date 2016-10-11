@@ -49,7 +49,7 @@ request.onreadystatechange = function(){
         }
     }
 };
-request.open('GET' , 'http://abhiram4572.imad.hasura-app.io/submit-name' + name , true);
+request.open('GET' , 'http://abhiram4572.imad.hasura-app.io/submit-name?name=' + name , true);
 request.send(null);
 //Capture a list of names and render it as  a list 
 
