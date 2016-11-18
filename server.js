@@ -90,6 +90,10 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
+app.get('/new', function (req, res) {
+  res.sendFile(path.join(__dirname, 'new', 'index.html'));
+});
+
 
 app.get('/counter' , function(req,res) {
     counter = counter +1;
